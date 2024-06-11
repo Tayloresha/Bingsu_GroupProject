@@ -22,16 +22,17 @@ We are excited to present our Family Tracker App, a comprehensive mobile applica
 
 4. User-Friendly Interface: Design an intuitive and easy-to-navigate user interface that caters to users of all ages and technical backgrounds, promoting accessibility and usability.
 <br><br>
+
 **3. Features and Functionalities**
 <br>
 Each of the team members prepared one web page for the project as shown in the following table. <br><br>
 
 | **Feature** | **Functionality** |
 |----------|------------------|
-| **User Authentication:** <br> Allow users to sign up and log in securely to access the app's features.| |
-| **Member Profiles:** <br> Enable users to create profiles for their family members with details like age, medical history, and phone number.| |
-| **Schedule Management:** <br> Enable users to list, track, and manage the activities and events of family members.| |
-| **Reminder Setting:** <br> Allow users to set reminders for important events related to family members, such as appointments or competitions.| |
+| **User Authentication:** <br> Allow users to sign up and log in securely to access the app's features.|-Provides secure registration and login functionality using authentication protocols. -Ensures user data privacy and security through encrypted communication.|
+| **Member Profiles:** <br> Enable users to create profiles for their family members with details like age, medical history, and phone number.|-Allows users to create, view, update, and delete profiles for family members. -Enables users to input and store detailed information about each family member securely.|
+| **Schedule Management:** <br> Enable users to list, track, and manage the activities and events of family members.|-Integrates a calendar feature for users to visualize and manage family schedules. -Allows users to add, edit, and delete activities or events for each family member.|
+| **Reminder Setting:** <br> Allow users to set reminders for important events related to family members, such as appointments or competitions.|-Provides an intuitive interface for users to set reminders for specific events or tasks. -Sends notifications or reminders to users based on scheduled events or tasks.|
 
 <br><br>
 
