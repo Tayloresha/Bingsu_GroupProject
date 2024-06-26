@@ -95,5 +95,10 @@ Family Members Profile
 &emsp; dart:html Retrieved 7 May 2024 from <br> &emsp; https://dart.dev/libraries/dart-html
 <br><br>
 
+**7. Weekly Progress Report**
+<br><br>
+
+<img alt = "Weekly Progress Report" src = "https://github.com/user-attachments/files/15997071/Weekly.Progress.Report.copy_240627_065040.pdf">
+
 
 
