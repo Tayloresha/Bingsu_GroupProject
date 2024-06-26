@@ -39,18 +39,13 @@ Each of the team members prepared one web page for the project as shown in the f
 **4. Prototype**
 <br>
 
-Login page 
+LOGIN
 <br>
 
-| **Feature** | **Functionality** |
+| **** | **** |
 |----------|------------------|
+| **Login Page** <br> <img width="276" alt="Screenshot 2024-06-26 at 11 05 09 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/56c5c696-3990-4b29-8e45-04a4da218f94">|**Register page** <br> <img width="276" alt="Screenshot 2024-06-26 at 11 05 22 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/55918f8d-72a9-416b-a5e9-28fcd4eb93d3">|
 | **Login Page** <br> <img width="276" alt="Screenshot 2024-06-26 at 11 05 09 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/56c5c696-3990-4b29-8e45-04a4da218f94">|**Login Page** <br> <img width="276" alt="Screenshot 2024-06-26 at 11 05 22 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/55918f8d-72a9-416b-a5e9-28fcd4eb93d3">|
-| **Login Page** <br> <img width="276" alt="Screenshot 2024-06-26 at 11 05 09 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/56c5c696-3990-4b29-8e45-04a4da218f94">|**Login Page** <br> <img width="276" alt="Screenshot 2024-06-26 at 11 05 22 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/55918f8d-72a9-416b-a5e9-28fcd4eb93d3">|
-
-
-Register page
-<br>
-<img width="276" alt="Screenshot 2024-06-26 at 11 05 22 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/55918f8d-72a9-416b-a5e9-28fcd4eb93d3">
 
 Schedule page
 <br>
