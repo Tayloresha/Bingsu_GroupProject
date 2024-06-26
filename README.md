@@ -59,7 +59,7 @@ REMINDER
 | <br> | <br> |
 |----------|------------------|
 | **Reminder page** <br> <img width="280" alt="Screenshot 2024-06-26 at 8 05 56 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/e7d8e13c-acab-403e-961f-033d7e27f2a2">|**Set date and time for reminder** <br> <img width="280" alt="Screenshot 2024-06-26 at 8 07 41 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/e70c4199-ce5f-480b-845d-b39500f5e5d2">|
-| **Edit name of reminder ** <br> <img width="280" alt="Screenshot 2024-06-26 at 8 07 49 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/5fdcca84-ce96-4073-8cac-5eb562b424cb">|<br>|
+| **Edit name of reminder** <br> <img width="280" alt="Screenshot 2024-06-26 at 8 07 49 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/5fdcca84-ce96-4073-8cac-5eb562b424cb">|<br>|
 
 FAMILY MEMBERS' PROFILES
 <br>
@@ -71,6 +71,14 @@ FAMILY MEMBERS' PROFILES
 <br><br>
 
 **5. Sequence Diagram**
+<br>
+Login
+<br>
+
+Schedule
+<br>
+
+Reminder
 <br>
 
 Family Members Profile 
