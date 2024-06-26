@@ -74,14 +74,16 @@ FAMILY MEMBERS' PROFILES
 <br>
 Login
 <br>
-<img width="431" alt="Screenshot 2024-06-27 at 7 54 49 AM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/56ab529b-7484-4515-a55d-46d01d779aa9">
+<img width="1266" alt="Screenshot 2024-06-27 at 7 58 19 AM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/a1e9c265-1b5c-4850-bad3-f837ecf5dae4">
+
 
 Schedule
 <br>
 
 Reminder
 <br>
-<img width="467" alt="Screenshot 2024-06-27 at 7 33 59 AM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/49cd6074-e2d1-4c0a-bc9a-a3f098c32c47">
+<img width="1266" alt="Screenshot 2024-06-27 at 7 58 32 AM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/abf600df-9cc0-442a-a333-ee70b4cbdc21">
+
 
 Family Members Profile 
 <br>
