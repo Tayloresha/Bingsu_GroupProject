@@ -41,6 +41,9 @@ Each of the team members prepared one web page for the project as shown in the f
 
 Login page 
 <br>
+
+|----------|------------------|
+| **Register Page** <br> <img width="276" alt="Screenshot 2024-06-26 at 11 05 22 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/55918f8d-72a9-416b-a5e9-28fcd4eb93d3">|-Provides secure registration and login functionality using authentication protocols. -Ensures user data privacy and security through encrypted communication.|
 <img width="276" alt="Screenshot 2024-06-26 at 11 05 09 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/56c5c696-3990-4b29-8e45-04a4da218f94">
 
 Register page
