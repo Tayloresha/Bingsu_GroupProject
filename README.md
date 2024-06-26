@@ -40,24 +40,31 @@ Each of the team members prepared one web page for the project as shown in the f
 <br>
 
 Reminder page 
+<br>
 <img width="280" alt="Screenshot 2024-06-26 at 8 05 56 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/e7d8e13c-acab-403e-961f-033d7e27f2a2">
 
 Set date and time for reminder 
+<br>
 <img width="280" alt="Screenshot 2024-06-26 at 8 07 41 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/e70c4199-ce5f-480b-845d-b39500f5e5d2">
 
 Edit name of reminder 
+<br>
 <img width="280" alt="Screenshot 2024-06-26 at 8 07 49 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/5fdcca84-ce96-4073-8cac-5eb562b424cb">
 
 Family member's profile page 
+<br>
 <img width="280" alt="Screenshot 2024-06-26 at 8 06 58 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/90555bf0-688e-49b5-9d7e-056e0f48e7b7">
 
 Create profile
+<br>
 <img width="280" alt="Screenshot 2024-06-26 at 8 07 28 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/ac5cf457-c8db-440e-8373-a019f65fa67b">
 
 Profile details
+<br>
 <img width="280" alt="Screenshot 2024-06-26 at 8 07 09 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/447305ce-43c6-4691-b7ee-a84e32ecefd5">
 
 Edit profile
+<br>
 <img width="280" alt="Screenshot 2024-06-26 at 8 07 21 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/16785b41-b85e-4479-b1e7-739426eba68c">
 
 
