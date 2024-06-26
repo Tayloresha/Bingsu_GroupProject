@@ -74,6 +74,10 @@ Edit profile
 **5. Sequence Diagram**
 <br>
 
+Family Members Profile 
+<br>
+<img src = "!https://github.com/Tayloresha/Bingsu_GroupProject/assets/116816965/9c269bb9-0287-45fb-b562-9c5fd5aba816">
+
 
 <br><br>
 
