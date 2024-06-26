@@ -74,12 +74,14 @@ FAMILY MEMBERS' PROFILES
 <br>
 Login
 <br>
+<img width="431" alt="Screenshot 2024-06-27 at 7 54 49 AM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/56ab529b-7484-4515-a55d-46d01d779aa9">
 
 Schedule
 <br>
 
 Reminder
 <br>
+<img width="467" alt="Screenshot 2024-06-27 at 7 33 59 AM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/49cd6074-e2d1-4c0a-bc9a-a3f098c32c47">
 
 Family Members Profile 
 <br>
