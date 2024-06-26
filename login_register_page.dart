@@ -1,6 +1,8 @@
+import 'package:family_tracker/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../auth.dart';
+import 'package:family_tracker/pages/schedule_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -24,10 +26,18 @@ class _LoginPageState extends State<LoginPage> {
         email: emailController.text,
         password: passwordController.text,
       );
+      if (mounted) {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => const HomePage()),
+        );
+      }
     } on FirebaseAuthException catch (e) {
-      setState(() {
-        errorMessage = e.message;
-      });
+      if (mounted) {
+        setState(() {
+          errorMessage = e.message;
+        });
+      }
     }
   }
 
@@ -36,24 +46,21 @@ class _LoginPageState extends State<LoginPage> {
       await Auth().createUserWithEmailAndPassword(
         email: emailController.text,
         password: passwordController.text,
-        name: nameController.text, // Pass the name
+        name: nameController.text,
       );
+      if (mounted) {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => const SchedulePage()),
+        );
+      }
     } on FirebaseAuthException catch (e) {
-      setState(() {
-        errorMessage = e.message;
-      });
+      if (mounted) {
+        setState(() {
+          errorMessage = e.message;
+        });
+      }
     }
-  }
-
-  Widget _title() {
-    return const Text(
-      'Welcome',
-      style: TextStyle(
-        color: Colors.white,
-        fontSize: 30,
-        fontWeight: FontWeight.bold,
-      ),
-    );
   }
 
   Widget _entryField(String title, TextEditingController controller,
@@ -61,40 +68,40 @@ class _LoginPageState extends State<LoginPage> {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: TextField(
-          controller: controller,
-          obscureText: isPassword ? !_isPasswordVisible : false,
-          decoration: InputDecoration(
-            labelText: title,
-            labelStyle: TextStyle(color: Colors.blue[900]!),
-            enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(12),
-              borderSide: BorderSide(
-                color: Colors.blue[900]!,
-              ),
+        controller: controller,
+        obscureText: isPassword ? !_isPasswordVisible : false,
+        decoration: InputDecoration(
+          labelText: title,
+          labelStyle: TextStyle(color: Colors.blue[900]!),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: BorderSide(
+              color: Colors.blue[900]!,
             ),
-            focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(12),
-              borderSide: BorderSide(color: Colors.blue[900]!),
-            ),
-            suffixIcon:
-                isPassword // Add this block for password visibility toggle
-                    ? IconButton(
-                        icon: Icon(
-                          _isPasswordVisible
-                              ? Icons.visibility
-                              : Icons.visibility_off,
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            _isPasswordVisible = !_isPasswordVisible;
-                          });
-                        },
-                      )
-                    : null,
           ),
-          style: TextStyle(
-            color: Colors.blue[900],
-          )),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: BorderSide(color: Colors.blue[900]!),
+          ),
+          suffixIcon: isPassword
+              ? IconButton(
+                  icon: Icon(
+                    _isPasswordVisible
+                        ? Icons.visibility
+                        : Icons.visibility_off,
+                  ),
+                  onPressed: () {
+                    setState(() {
+                      _isPasswordVisible = !_isPasswordVisible;
+                    });
+                  },
+                )
+              : null,
+        ),
+        style: TextStyle(
+          color: Colors.blue[900],
+        ),
+      ),
     );
   }
 
@@ -112,7 +119,7 @@ class _LoginPageState extends State<LoginPage> {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         minimumSize: const Size(double.infinity, 50),
-        backgroundColor: Color.fromARGB(255, 116, 56, 183),
+        backgroundColor: const Color.fromARGB(255, 116, 56, 183),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),
         ),
@@ -126,7 +133,7 @@ class _LoginPageState extends State<LoginPage> {
       },
       child: Text(
         isLogin ? 'Login' : 'Register',
-        style: TextStyle(
+        style: const TextStyle(
           fontSize: 18,
           color: Colors.white,
         ),
@@ -151,6 +158,15 @@ class _LoginPageState extends State<LoginPage> {
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    // Clean up controllers
+    nameController.dispose();
+    emailController.dispose();
+    passwordController.dispose();
+    super.dispose();
   }
 
   @override
@@ -188,7 +204,7 @@ class _LoginPageState extends State<LoginPage> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const SizedBox(height: 80), // Add some space before the card
+                const SizedBox(height: 80),
                 Card(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
