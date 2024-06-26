@@ -1,7 +1,7 @@
 <p align="center">
 GROUP BINGSU
   <br>‘FamilyConnect Pro’<br><br>
-Prepared by Nur Athisha Binti Mohd Zariman (2118676), Nora Alissa binti Ismail(2117862) & Adriana binti Anuar Kamal (2025778)<br><br>
+Prepared by Nur Athisha Binti Mohd Zariman (2118676), Nora Alissa binti Ismail (2117862) & Adriana binti Anuar Kamal (2025778)<br><br>
 
 </p><br>
 
