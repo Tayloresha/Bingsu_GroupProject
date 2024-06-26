@@ -48,56 +48,25 @@ LOGIN
 
 SCHEDULE
 <br>
-| **** | **** | **** | **** |
-|----------|------------------|------------------|------------------|
+| **** | **** |
+|----------|------------------|
 | **Schedule page** <br> <img width="310" alt="Screenshot 2024-06-26 at 11 59 24 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/39572b27-aaa3-474b-803c-549cd7f426ea">|**All activity page** <br> <img width="310" alt="Screenshot 2024-06-26 at 11 59 31 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/c77da0dc-6df8-4c5c-99b9-c5a67b160c93">|
 | **Add event page** <br> <img width="310" alt="Screenshot 2024-06-26 at 11 59 37 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/317d96e6-af15-4308-a2ab-baa7d60e021f">|**Event details page** <br> <img width="312" alt="Screenshot 2024-06-26 at 11 41 27 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/b67c97fe-3bef-4307-b302-22ec43a5d7bd">|
 
-Schedule page
+
+REMINDER
 <br>
-<img width="310" alt="Screenshot 2024-06-26 at 11 59 24 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/39572b27-aaa3-474b-803c-549cd7f426ea">
+| **** | **** |
+|----------|------------------|
+| **Reminder page** <br> <img width="280" alt="Screenshot 2024-06-26 at 8 05 56 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/e7d8e13c-acab-403e-961f-033d7e27f2a2">|**Set date and time for reminder** <br> <img width="280" alt="Screenshot 2024-06-26 at 8 07 41 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/e70c4199-ce5f-480b-845d-b39500f5e5d2">|
+| **Edit name of reminder ** <br> <img width="280" alt="Screenshot 2024-06-26 at 8 07 49 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/5fdcca84-ce96-4073-8cac-5eb562b424cb">|<br>|
 
-All activity page
+FAMILY MEMBERS' PROFILES
 <br>
-<img width="310" alt="Screenshot 2024-06-26 at 11 59 31 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/c77da0dc-6df8-4c5c-99b9-c5a67b160c93">
-
-Add event page 
-<br>
-<img width="310" alt="Screenshot 2024-06-26 at 11 59 37 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/317d96e6-af15-4308-a2ab-baa7d60e021f">
-
-Event details page
-<br>
-<img width="312" alt="Screenshot 2024-06-26 at 11 41 27 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/b67c97fe-3bef-4307-b302-22ec43a5d7bd">
-
-Reminder page 
-<br>
-<img width="280" alt="Screenshot 2024-06-26 at 8 05 56 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/e7d8e13c-acab-403e-961f-033d7e27f2a2">
-
-Set date and time for reminder 
-<br>
-<img width="280" alt="Screenshot 2024-06-26 at 8 07 41 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/e70c4199-ce5f-480b-845d-b39500f5e5d2">
-
-Edit name of reminder 
-<br>
-<img width="280" alt="Screenshot 2024-06-26 at 8 07 49 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/5fdcca84-ce96-4073-8cac-5eb562b424cb">
-
-Family member's profile page 
-<br>
-<img width="280" alt="Screenshot 2024-06-26 at 8 06 58 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/90555bf0-688e-49b5-9d7e-056e0f48e7b7">
-
-Create profile
-<br>
-<img width="280" alt="Screenshot 2024-06-26 at 8 07 28 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/ac5cf457-c8db-440e-8373-a019f65fa67b">
-
-Profile details
-<br>
-<img width="280" alt="Screenshot 2024-06-26 at 8 07 09 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/447305ce-43c6-4691-b7ee-a84e32ecefd5">
-
-Edit profile
-<br>
-<img width="280" alt="Screenshot 2024-06-26 at 8 07 21 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/16785b41-b85e-4479-b1e7-739426eba68c">
-
-
+| **** | **** |
+|----------|------------------|
+| **Family member's profile page** <br> <img width="280" alt="Screenshot 2024-06-26 at 8 06 58 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/90555bf0-688e-49b5-9d7e-056e0f48e7b7">|**Create profile** <br> <img width="280" alt="Screenshot 2024-06-26 at 8 07 28 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/ac5cf457-c8db-440e-8373-a019f65fa67b">|
+| **Profile details** <br> <img width="280" alt="Screenshot 2024-06-26 at 8 07 09 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/447305ce-43c6-4691-b7ee-a84e32ecefd5">|**Edit profile** <br> <img width="280" alt="Screenshot 2024-06-26 at 8 07 21 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/16785b41-b85e-4479-b1e7-739426eba68c">|
 
 <br><br>
 
