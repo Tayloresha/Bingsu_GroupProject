@@ -98,7 +98,7 @@ Family Members Profile
 **7. Weekly Progress Report**
 <br><br>
 
-<img alt = "Weekly Progress Report" src = "https://github.com/user-attachments/files/15997071/Weekly.Progress.Report.copy_240627_065040">
+<img alt = "Weekly Progress Report" src = "https://github.com/Tayloresha/Bingsu_GroupProject/assets/116816965/53b9caa2-2e3d-4001-8314-690e6e5cc22b">
 
 
 
