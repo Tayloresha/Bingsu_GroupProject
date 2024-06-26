@@ -197,10 +197,10 @@ class _ReminderPageState extends State<ReminderPage> {
       },
       background: Container(
         color: Colors.red,
-        child: Align(
+        child: const Align(
           alignment: Alignment.centerRight,
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+            padding: EdgeInsets.symmetric(horizontal: 15.0),
             child: Icon(
               Icons.delete,
               color: Colors.white,
@@ -216,10 +216,10 @@ class _ReminderPageState extends State<ReminderPage> {
         elevation: 5,
         margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
         child: ListTile(
-          contentPadding: const EdgeInsets.all(16),
+          contentPadding: const EdgeInsets.all(12),
           title: Text(
             reminder.text,
-            style: TextStyle(
+            style: const TextStyle(
                 color: Colors.black87,
                 fontSize: 16.0,
                 fontWeight: FontWeight.bold),
@@ -228,20 +228,20 @@ class _ReminderPageState extends State<ReminderPage> {
             reminder.dateTime != null
                 ? _formatDateTime(reminder.dateTime!)
                 : 'No date selected',
-            style: TextStyle(color: Colors.black54),
+            style: const TextStyle(color: Colors.black54),
           ),
           trailing: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
               IconButton(
-                icon: Icon(Icons.calendar_today),
+                icon: const Icon(Icons.calendar_today),
                 onPressed: () => _pickDateTime(reminder),
-                color: Color.fromARGB(255, 116, 56, 183), // Purple color
+                color: const Color.fromARGB(255, 116, 56, 183), // Purple color
               ),
               IconButton(
-                icon: Icon(Icons.edit),
+                icon: const Icon(Icons.edit),
                 onPressed: () => _editReminder(reminder),
-                color: Color.fromARGB(255, 70, 121, 231), // Blue color
+                color: const Color.fromARGB(255, 70, 121, 231), // Blue color
               ),
             ],
           ),
@@ -251,12 +251,13 @@ class _ReminderPageState extends State<ReminderPage> {
   }
 
   Widget _title() {
-    return Row(
-      children: const [
+    return const Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
         Icon(Icons.family_restroom, color: Colors.white),
         SizedBox(width: 8),
         Text(
-          'FamilyConnect Pro',
+          'Reminders',
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
@@ -266,18 +267,12 @@ class _ReminderPageState extends State<ReminderPage> {
     );
   }
 
-  Widget _userUid() {
-    return Text(
-      user?.email ?? 'User email',
-      style: TextStyle(color: Colors.white),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: _title(),
+        centerTitle: true, // Center the title
         flexibleSpace: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
@@ -290,68 +285,43 @@ class _ReminderPageState extends State<ReminderPage> {
             ),
           ),
         ),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.logout),
-            onPressed: () async {
-              await Auth().signOut();
-            },
-            color: Colors.white,
-          ),
-        ],
       ),
       body: Stack(
         children: [
           Container(
-            height: double.infinity,
-            width: double.infinity,
-            padding: const EdgeInsets.all(20),
-            //color: Color.fromARGB(255, 236, 230, 243), // White background
             decoration: const BoxDecoration(
               gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomRight,
                 colors: [
                   Color.fromARGB(255, 222, 205, 240),
-                  Color.fromARGB(255, 145, 169, 230),
+                  Color.fromARGB(255, 145, 169, 230), // Purple color
                 ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
               ),
             ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  'Reminders',
-                  style: TextStyle(
-                    color: Color.fromARGB(255, 58, 28, 91), // Purple color
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const SizedBox(height: 10),
-                Expanded(
-                  child: ListView.builder(
-                    itemCount: _reminders.length,
-                    itemBuilder: (context, index) {
-                      return _reminderItem(_reminders[index]);
-                    },
-                  ),
-                ),
-              ],
-            ),
           ),
-          Positioned(
-            bottom: 60,
-            right: 30,
-            child: FloatingActionButton(
-              onPressed: _addReminder,
-              backgroundColor:
-                  Color.fromARGB(255, 116, 56, 183), // Purple color
-              child: const Icon(Icons.add, color: Colors.white),
-            ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              const Padding(
+                padding: EdgeInsets.all(6.0),
+              ),
+              Expanded(
+                child: ListView.builder(
+                  itemCount: _reminders.length,
+                  itemBuilder: (context, index) {
+                    return _reminderItem(_reminders[index]);
+                  },
+                ),
+              ),
+            ],
           ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _addReminder,
+        backgroundColor: const Color.fromARGB(255, 116, 56, 183),
+        child: const Icon(Icons.add, color: Colors.white),
       ),
     );
   }
