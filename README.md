@@ -47,6 +47,21 @@ Register page
 <br>
 <img width="276" alt="Screenshot 2024-06-26 at 11 05 22 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/55918f8d-72a9-416b-a5e9-28fcd4eb93d3">
 
+Schedule page
+<br>
+<img width="310" alt="Screenshot 2024-06-26 at 11 59 24 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/39572b27-aaa3-474b-803c-549cd7f426ea">
+
+All activity page
+<br>
+<img width="310" alt="Screenshot 2024-06-26 at 11 59 31 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/c77da0dc-6df8-4c5c-99b9-c5a67b160c93">
+
+Add event page 
+<br>
+<img width="310" alt="Screenshot 2024-06-26 at 11 59 37 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/317d96e6-af15-4308-a2ab-baa7d60e021f">
+
+Event details page
+<br>
+<img width="312" alt="Screenshot 2024-06-26 at 11 41 27 PM" src="https://github.com/Tayloresha/Bingsu_GroupProject/assets/162477571/b67c97fe-3bef-4307-b302-22ec43a5d7bd">
 
 Reminder page 
 <br>
