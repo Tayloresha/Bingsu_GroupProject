@@ -5,6 +5,7 @@ import 'package:family_tracker/pages/members_detail_page.dart';
 import 'package:family_tracker/member.dart';
 import 'package:family_tracker/firestore.dart';
 
+// Main widget for displaying the members profile page
 class MembersProfilePage extends StatefulWidget {
   const MembersProfilePage({super.key});
 
@@ -12,9 +13,11 @@ class MembersProfilePage extends StatefulWidget {
   _MembersProfilePageState createState() => _MembersProfilePageState();
 }
 
+// State class for MembersProfilePage
 class _MembersProfilePageState extends State<MembersProfilePage> {
   final FirestoreService firestoreService = FirestoreService();
 
+  // Navigate to create profile page and add new member if created
   void _navigateToCreateProfile(BuildContext context) async {
     final newMember = await Navigator.of(context).push(
       MaterialPageRoute(
@@ -23,10 +26,13 @@ class _MembersProfilePageState extends State<MembersProfilePage> {
     );
 
     if (newMember != null) {
-      setState(() {});
+      setState(() {
+        // Data will be updated via Firestore stream
+      });
     }
   }
 
+  // Widget to display the title with an icon
   Widget _title() {
     return const Row(
       mainAxisSize: MainAxisSize.min,
@@ -47,6 +53,7 @@ class _MembersProfilePageState extends State<MembersProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // App bar with title and gradient background
       appBar: AppBar(
         title: _title(),
         centerTitle: true,
@@ -63,6 +70,7 @@ class _MembersProfilePageState extends State<MembersProfilePage> {
           ),
         ),
       ),
+      // Main body with gradient background and stream builder to display members
       body: Stack(
         children: [
           Container(
@@ -77,6 +85,7 @@ class _MembersProfilePageState extends State<MembersProfilePage> {
               ),
             ),
           ),
+          // StreamBuilder to listen for real-time updates from Firestore
           StreamBuilder<QuerySnapshot>(
             stream: firestoreService.getFamilyMembers(),
             builder: (context, snapshot) {
@@ -93,6 +102,7 @@ class _MembersProfilePageState extends State<MembersProfilePage> {
 
                     Member member = Member.fromMap(data, docID);
 
+                    // Card to display each member's information
                     return Card(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
@@ -130,14 +140,17 @@ class _MembersProfilePageState extends State<MembersProfilePage> {
                   },
                 );
               } else if (snapshot.hasError) {
+                // Display error message if there's an error in the stream
                 return Center(child: Text('Error: ${snapshot.error}'));
               } else {
+                // Display a loading indicator while waiting for data
                 return const Center(child: CircularProgressIndicator());
               }
             },
           ),
         ],
       ),
+      // Floating action button to navigate to create profile page
       floatingActionButton: FloatingActionButton(
         onPressed: () => _navigateToCreateProfile(context),
         backgroundColor: const Color.fromARGB(255, 116, 56, 183),
