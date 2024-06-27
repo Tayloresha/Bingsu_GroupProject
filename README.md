@@ -106,7 +106,7 @@ Family Members Profile
 | **Name** | **Contribution** |
 |----------|------------------|
 | Nur Athisha Binti Mohd Zariman (2118676)|Schedule Pages <br>- schedule.dart <br>- add_event_page.dart <br>- view_all_events_page.dart <br>- event_details_page.dart <br>|
-| Nora Alissa binti Ismail (2117862)|Family Profile Pages <br>- create_profile_page.dart <br>- edit_profile_page.dart <br>- home_page.dart <br>- members_detail_page.dart <br>- members_profile_page.dart <br>- firestore.dart <br>- member.dart <br>- nav_bar.dart <br>- textfield_widget.dart |
+| Nora Alissa binti Ismail (2117862)|Family Profile Pages <br>- create_profile_page.dart <br>- edit_profile_page.dart <br>- home_page.dart <br>- members_detail_page.dart <br>- members_profile_page.dart <br>- firestore.dart <br>- member.dart <br>- nav_bar.dart <br> |
 | Adriana binti Anuar Kamal (2025778)|Login and Reminder Pages <br> - main.dart <br>- reminder.dart <br>- auth.dart <br>- reminder_page.dart <br>- login_register_page.dart | 
 
 <br><br>
