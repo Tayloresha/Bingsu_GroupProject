@@ -79,7 +79,7 @@ Login
 
 Schedule
 <br>
-![Untitled (1)](https://github.com/Tayloresha/Bingsu_GroupProject/assets/122611852/e0a1414e-557c-4e97-b9f5-dbdde29fb225)
+![Untitled (2)](https://github.com/Tayloresha/Bingsu_GroupProject/assets/122611852/76719e63-4175-4e8c-a657-2f835534b4b9)
 
 
 Reminder
