@@ -122,6 +122,9 @@ Family Members Profile
 <br><br>
 &emsp; YouTube. (2023b, September 24). Mastering flutter local notifications: Step-by-step tutorial. YouTube. <br> &emsp; https://www.youtube.com/watch?v=--PQXg_mx9I  
 <br><br>
+&emsp; YouTube. (2023b, January 7). Implement flutter local push notifications | local notification for Android and IOS | PackageExplore. YouTube. <br> &emsp; https://www.youtube.com/watch?v=26TTYlwc6FM 
+<br><br>
+YouTube. (2022b, October 27). Flutter dismissible widget. YouTube. <br> &emsp; https://www.youtube.com/watch?v=_Q7PgVaiOVM 
 
 
 
