@@ -106,13 +106,13 @@ Family Members Profile
 | **Name** | **Contribution** |
 |----------|------------------|
 | Nur Athisha Binti Mohd Zariman (2118676)|Schedule Pages <br> - schedule.dart <br>- add_event_page.dart <br>- view_all_events_page.dart <br>- event_details_page.dart <br>|
-| Nora Alissa binti Ismail (2117862)|Family Profile Pages <br> - .dart <br> |
+| Nora Alissa binti Ismail (2117862)|Family Profile Pages <br>- create_profile_page.dart <br>- edit_profile_page.dart <br>-  |
 | Adriana binti Anuar Kamal (2025778)|Login and Reminder Pages <br> - main.dart <br>- reminder.dart <br>- auth.dart <br>- reminder_page.dart <br>- login_register_page.dart | 
 
 <br><br>
 **8. References**
 <br><br>
-&emsp; Build a web app with Dart Retrieved 7 May 2024 from <br> &emsp; https://dart.dev/web/get-started
+&emsp; Build a web app with Dart  7 May 2024 from <br> &emsp; https://dart.dev/web/get-started
 <br><br>
 &emsp; dart:html Retrieved 7 May 2024 from <br> &emsp; https://dart.dev/libraries/dart-html
 <br><br>
