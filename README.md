@@ -79,6 +79,8 @@ Login
 
 Schedule
 <br>
+![Untitled (1)](https://github.com/Tayloresha/Bingsu_GroupProject/assets/122611852/e0a1414e-557c-4e97-b9f5-dbdde29fb225)
+
 
 Reminder
 <br>
@@ -92,17 +94,19 @@ Family Members Profile
 
 <br><br>
 
-**6. References**
+**6. Weekly Progress Report**
+<br><br>
+
+<img alt = "Weekly Progress Report" src = "https://github.com/Tayloresha/Bingsu_GroupProject/assets/116816965/53b9caa2-2e3d-4001-8314-690e6e5cc22b">
+<br><br>
+
+**7. References**
 <br><br>
 &emsp; Build a web app with Dart Retrieved 7 May 2024 from <br> &emsp; https://dart.dev/web/get-started
 <br><br>
 &emsp; dart:html Retrieved 7 May 2024 from <br> &emsp; https://dart.dev/libraries/dart-html
 <br><br>
 
-**7. Weekly Progress Report**
-<br><br>
-
-<img alt = "Weekly Progress Report" src = "https://github.com/Tayloresha/Bingsu_GroupProject/assets/116816965/53b9caa2-2e3d-4001-8314-690e6e5cc22b">
 
 
 
