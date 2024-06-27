@@ -3,17 +3,18 @@ import 'package:family_tracker/member.dart';
 import 'package:family_tracker/pages/edit_profile_page.dart';
 import 'package:family_tracker/firestore.dart';
 
+// Stateful widget to display detailed information of a member
 class MemberDetailPage extends StatefulWidget {
-  final Member member;
-  final String docID;
+  final Member member; // The member to display details for
+  final String docID; // The document ID of the member in Firestore
 
-  const MemberDetailPage(
-      {super.key, required this.member, required this.docID});
+  const MemberDetailPage({super.key, required this.member, required this.docID});
 
   @override
   _MemberDetailPageState createState() => _MemberDetailPageState();
 }
 
+// State class for MemberDetailPage
 class _MemberDetailPageState extends State<MemberDetailPage> {
   final FirestoreService firestoreService = FirestoreService();
   late Member member;
@@ -21,37 +22,37 @@ class _MemberDetailPageState extends State<MemberDetailPage> {
   @override
   void initState() {
     super.initState();
-    member = widget.member;
+    member = widget.member; // Initialize the member with the passed member data
   }
 
+  // Method to delete the member from Firestore
   void _deleteMember() async {
     await firestoreService.deleteMember(widget.docID);
-    Navigator.of(context).pop(); // Go back to the previous screen
+    Navigator.of(context).pop(); // Go back to the previous screen after deletion
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(member.name),
+        title: Text(member.name), // Display the member's name as the title
         actions: [
           IconButton(
-            icon: const Icon(Icons.delete),
+            icon: const Icon(Icons.delete), // Delete icon button in the app bar
             onPressed: () {
               showDialog(
                 context: context,
                 builder: (context) => AlertDialog(
                   title: const Text('Delete Member'),
-                  content: const Text(
-                      'Are you sure you want to delete this member?'),
+                  content: const Text('Are you sure you want to delete this member?'),
                   actions: [
                     TextButton(
-                      onPressed: () => Navigator.of(context).pop(),
+                      onPressed: () => Navigator.of(context).pop(), // Close the dialog
                       child: const Text('Cancel'),
                     ),
                     TextButton(
                       onPressed: () {
-                        _deleteMember();
+                        _deleteMember(); // Call the delete method
                         Navigator.of(context).pop(); // Close the dialog
                       },
                       child: const Text('Delete'),
@@ -67,9 +68,9 @@ class _MemberDetailPageState extends State<MemberDetailPage> {
         physics: const BouncingScrollPhysics(),
         padding: const EdgeInsets.all(16.0),
         children: [
-          buildName(member),
+          buildName(member), // Display the member's name and relationship
           const SizedBox(height: 24),
-          buildDetails(member),
+          buildDetails(member), // Display detailed information of the member
         ],
       ),
       floatingActionButton: FloatingActionButton(
@@ -82,16 +83,17 @@ class _MemberDetailPageState extends State<MemberDetailPage> {
 
           if (updatedMember != null) {
             setState(() {
-              member = updatedMember;
+              member = updatedMember; // Update the member details if edited
             });
           }
         },
-        child: const Icon(Icons.edit),
+        child: const Icon(Icons.edit), // Edit icon button
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
   }
 
+  // Widget to display the member's name and relationship
   Widget buildName(Member member) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -112,6 +114,7 @@ class _MemberDetailPageState extends State<MemberDetailPage> {
     );
   }
 
+  // Widget to display detailed information of the member
   Widget buildDetails(Member member) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -120,24 +123,25 @@ class _MemberDetailPageState extends State<MemberDetailPage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              buildButton(member.age.toString(), 'Age'),
+              buildButton(member.age.toString(), 'Age'), // Display age
               buildDivider(),
-              buildButton(member.birthday ?? 'N/A', 'Birthday'),
+              buildButton(member.birthday ?? 'N/A', 'Birthday'), // Display birthday
               buildDivider(),
-              buildButton(member.bloodType ?? 'N/A', 'Blood Type'),
+              buildButton(member.bloodType ?? 'N/A', 'Blood Type'), // Display blood type
             ],
           ),
         ),
         const SizedBox(height: 24),
-        buildDetail(member.phoneNumber ?? 'N/A', 'Phone Number'),
-        buildDetail(member.occupation ?? 'N/A', 'Occupation'),
-        buildDetail(member.address ?? 'N/A', 'Address'),
-        buildDetail(member.education ?? 'N/A', 'Education'),
-        buildDetail(member.medicalHistory ?? 'N/A', 'Medical History'),
+        buildDetail(member.phoneNumber ?? 'N/A', 'Phone Number'), // Display phone number
+        buildDetail(member.occupation ?? 'N/A', 'Occupation'), // Display occupation
+        buildDetail(member.address ?? 'N/A', 'Address'), // Display address
+        buildDetail(member.education ?? 'N/A', 'Education'), // Display education
+        buildDetail(member.medicalHistory ?? 'N/A', 'Medical History'), // Display medical history
       ],
     );
   }
 
+  // Widget to display each detail with a label
   Widget buildButton(String detail, String label) {
     return MaterialButton(
       padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 5),
@@ -160,11 +164,13 @@ class _MemberDetailPageState extends State<MemberDetailPage> {
     );
   }
 
+  // Widget to create a vertical divider
   Widget buildDivider() => Container(
         height: 24,
         child: const VerticalDivider(),
       );
 
+  // Widget to display each detailed information of the member
   Widget buildDetail(String detail, String label) {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 8.0),
