@@ -116,11 +116,11 @@ Family Members Profile
 <br><br>
 &emsp; dart:html Retrieved 7 May 2024 from <br> &emsp; https://dart.dev/libraries/dart-html
 <br><br>
-&emsp; YouTube. (2022, July 26). Flutter Firebase Auth - the cleanest & fastest way - IOS & android. YouTube. https://www.youtube.com/watch?v=rWamixHIKmQ&t=159s 
+&emsp; YouTube. (2022, July 26). Flutter Firebase Auth - the cleanest & fastest way - IOS & android. YouTube. https://www.youtube.com/watch?&emsp; v=rWamixHIKmQ&t=159s 
 <br><br>
 &emsp; YouTube. (2023, January 2). Flutter listview widget. YouTube. https://www.youtube.com/watch?v=kGI7Kj3n9o4 
 <br><br>
-&emsp; YouTube. (2023b, September 24). Mastering flutter local notifications: Step-by-step tutorial. YouTube. https://www.youtube.com/watch?v=--PQXg_mx9I 
+&emsp; YouTube. (2023b, September 24). Mastering flutter local notifications: Step-by-step tutorial. YouTube. https://www.youtube.com/watch?&emsp; v=--PQXg_mx9I 
 <br><br>
 
 
