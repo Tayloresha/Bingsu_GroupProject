@@ -4,6 +4,7 @@ import 'package:family_tracker/pages/reminder_page.dart';
 import 'package:family_tracker/pages/members_profile_page.dart';
 import 'package:family_tracker/pages/schedule_page.dart';
 
+// Stateful widget to manage the home page with bottom navigation
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -11,6 +12,7 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
+// State class for HomePage
 class _HomePageState extends State<HomePage> {
   int currentIndex = 0; // Index to track the current active tab
 
@@ -24,15 +26,14 @@ class _HomePageState extends State<HomePage> {
   // Function to update the current index when a tab is tapped
   void onTabTapped(int index) {
     setState(() {
-      currentIndex = index;
+      currentIndex = index; // Update the current index
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:
-          pages[currentIndex], // Display the current page based on currentIndex
+      body: pages[currentIndex], // Display the current page based on currentIndex
       bottomNavigationBar: NavBar(
         currentIndex: currentIndex, // Pass current index to NavBar
         onTabTapped: onTabTapped, // Pass function to handle tab tapping
