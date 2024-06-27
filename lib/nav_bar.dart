@@ -1,3 +1,4 @@
+// Nora Alissa binti Ismail (2117862)
 import 'package:flutter/material.dart';
 
 class NavBar extends StatelessWidget {
