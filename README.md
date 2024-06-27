@@ -100,7 +100,7 @@ Family Members Profile
 <img alt = "Weekly Progress Report" src = "https://github.com/Tayloresha/Bingsu_GroupProject/assets/116816965/53b9caa2-2e3d-4001-8314-690e6e5cc22b">
 <br><br>
 
-**3. Group Contribution**
+**7. Group Contribution**
 <br><br>
 
 | **Name** | **Contribution** |
@@ -110,7 +110,7 @@ Family Members Profile
 | Adriana binti Anuar Kamal (2025778)|Login and Reminder Pages <br> - .dart <br> 
 
 <br><br>
-**7. References**
+**8. References**
 <br><br>
 &emsp; Build a web app with Dart Retrieved 7 May 2024 from <br> &emsp; https://dart.dev/web/get-started
 <br><br>
