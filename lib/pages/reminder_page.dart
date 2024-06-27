@@ -1,3 +1,9 @@
+/* 
+Allows users to manage reminders within a Flutter application. It utilizes
+Firebase for authentication and Firestore for data storage, alongside a 
+local notification system for reminder alerts
+*/
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -30,6 +36,7 @@ class _ReminderPageState extends State<ReminderPage> {
     _loadReminders();
   }
 
+  //load reminders from firestore
   Future<void> _loadReminders() async {
     final snapshot = await _firestore
         .collection('reminders')
@@ -46,6 +53,7 @@ class _ReminderPageState extends State<ReminderPage> {
     });
   }
 
+  //add reminder to firestore
   Future<void> _addReminder() async {
     final newReminder = Reminder(id: _nextId++, text: 'New Reminder');
     setState(() {
@@ -59,6 +67,7 @@ class _ReminderPageState extends State<ReminderPage> {
     });
   }
 
+  //update reminder in firestore
   Future<void> _updateReminder(Reminder reminder) async {
     final doc = await _firestore
         .collection('reminders')
@@ -70,6 +79,7 @@ class _ReminderPageState extends State<ReminderPage> {
     await doc.reference.update(reminder.toMap());
   }
 
+  //delete reminder from firestore
   Future<void> _deleteReminder(Reminder reminder) async {
     setState(() {
       _reminders.remove(reminder);
@@ -84,6 +94,7 @@ class _ReminderPageState extends State<ReminderPage> {
     await doc.reference.delete();
   }
 
+  //pick date and time for reminder and schedule notification
   Future<void> _pickDateTime(Reminder reminder) async {
     DateTime? dateTime = await showOmniDateTimePicker(
       context: context,
@@ -115,12 +126,7 @@ class _ReminderPageState extends State<ReminderPage> {
       transitionDuration: const Duration(milliseconds: 200),
       barrierDismissible: true,
       selectableDayPredicate: (dateTime) {
-        // Disable 25th Feb 2023
-        if (dateTime == DateTime(2023, 2, 25)) {
-          return false;
-        } else {
-          return true;
-        }
+        return true;
       },
     );
 
@@ -138,6 +144,7 @@ class _ReminderPageState extends State<ReminderPage> {
     }
   }
 
+  //edit reminder text
   void _editReminder(Reminder reminder) {
     TextEditingController controller =
         TextEditingController(text: reminder.text);
@@ -174,16 +181,19 @@ class _ReminderPageState extends State<ReminderPage> {
     );
   }
 
+  //remove reminder from list
   void _removeReminderById(int id) {
     setState(() {
       _reminders.removeWhere((element) => element.id == id);
     });
   }
 
+  //format date and time
   String _formatDateTime(DateTime dateTime) {
     return DateFormat('dd/MM/yyyy HH:mm').format(dateTime);
   }
 
+  //reminder item widget
   Widget _reminderItem(Reminder reminder) {
     return Dismissible(
       key: Key(reminder.id.toString()),
@@ -250,6 +260,7 @@ class _ReminderPageState extends State<ReminderPage> {
     );
   }
 
+  //title widget
   Widget _title() {
     return const Row(
       mainAxisSize: MainAxisSize.min,
@@ -267,6 +278,7 @@ class _ReminderPageState extends State<ReminderPage> {
     );
   }
 
+  //build widget: app bar, body, floating action button
   @override
   Widget build(BuildContext context) {
     return Scaffold(
